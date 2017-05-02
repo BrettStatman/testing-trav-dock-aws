@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "node server.js"
   },
   "author": "Brett Statman <bstatman@neat.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.15.2",
+    "path": "^0.12.7"
+  }
 }
