@@ -3,10 +3,11 @@ language: node_js
 node__js:
   - 7.7.4
 before_install:
-  - "echo Branch: {{ TRAVIS_BRANCH }}"
+  - "echo --------- STARTING ---------"
+  - "echo Branch: ${TRAVIS_BRANCH}"
   - "echo PR: ${TRAVIS_PULL_REQUEST}"
-  - sudo apt-get update
+  - "sudo apt-get update"
 script:
   - npm install
 after_success:
-  - "echo It was successful"
+  - "echo --------- FINISHED ---------"
