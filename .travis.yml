@@ -10,4 +10,6 @@ before_install:
 script:
   - npm install
 after_success:
+  - docker --version
+  - docker build -q -t brett-${TRAVIS_COMMIT} .;
   - "echo --------- FINISHED ---------"
